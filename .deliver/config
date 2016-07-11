@@ -1,0 +1,21 @@
+# .deliver/config
+
+APP="dummy_blog"
+
+BUILD_HOST="146.185.176.130"
+BUILD_USER="builder"
+BUILD_AT="/tmp/edeliver/dummy_blog/builds"
+
+STAGING_HOSTS="95.85.7.66"
+STAGING_USER="web"
+DELIVER_TO="/home/web"
+
+# For *Phoenix* projects, symlink prod.secret.exs to our tmp source
+pre_erlang_get_and_update_deps() {
+  local _prod_secret_path="/home/builder/prod.secret.exs"
+  if [ "$TARGET_MIX_ENV" = "prod" ]; then
+    __sync_remote "
+      ln -sfn '$_prod_secret_path' '$BUILD_AT/config/prod.secret.exs'
+    "
+  fi
+}
