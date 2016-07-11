@@ -2,6 +2,8 @@
 
 APP="dummy_blog"
 
+AUTO_VERSION=commit-count+git-revision+branch-unless-master
+
 BUILD_HOST="146.185.176.130"
 BUILD_USER="builder"
 BUILD_AT="/tmp/edeliver/dummy_blog/builds"
