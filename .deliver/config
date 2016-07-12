@@ -13,7 +13,7 @@ STAGING_USER="web"
 DELIVER_TO="/home/web"
 
 PRODUCTION_HOSTS="178.62.212.221"
-PRODUCTION_USER="root"
+PRODUCTION_USER="web"
 DELIVER_TO="/home/web"
 
 # For *Phoenix* projects, symlink prod.secret.exs to our tmp source
