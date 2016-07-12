@@ -6,7 +6,7 @@ AUTO_VERSION=commit-count+git-revision+branch-unless-master
 
 BUILD_HOST="188.166.12.210"
 BUILD_USER="builder"
-BUILD_AT="/tmp/edeliver/dummy_blog/builds"
+BUILD_AT="/home/builder/tmp/edeliver/dummy_blog/builds"
 
 STAGING_HOSTS="188.166.12.210"
 STAGING_USER="web"
